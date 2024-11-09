@@ -1,2 +1,5 @@
 [workspace]
 members = ["webapi"]
+
+[workspace.package]
+authors = ["{{authors}}"]

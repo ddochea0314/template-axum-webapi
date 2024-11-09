@@ -10,7 +10,7 @@ use handlers::weatherforecast::{router, WeatherForecastOpenApi};
 #[tokio::main]
 async fn main() {
     let mut openapi = OpenApiBuilder::default()
-    .info(Info::new("Weather Forecast API", "1.0.0"))
+    .info(Info::new("{{project-name}} API", "1.0.0"))
     .build();
 
     openapi.merge(WeatherForecastOpenApi::openapi());
